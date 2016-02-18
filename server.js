@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/hook', (req, res) => {
-  io.emit('activity', {text: req.header('Referer') })
+  io.emit('activity', {text: JSON.stringify(req.headers) })
   res.status(200).end()
 })
 
