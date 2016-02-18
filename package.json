@@ -5,7 +5,7 @@
   "main": "init.js",
   "scripts": {
     "start": "node init.js",
-    "production": "webpack -p && HOST=https://webhook.sh npm start",
+    "production": "HOST=https://webhook.sh webpack -p",
     "webpack": "webpack --watch"
   },
   "author": "",

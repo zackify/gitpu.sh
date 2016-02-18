@@ -15,7 +15,6 @@ class Index extends React.Component{
     socket.on('activity', item => this.setState({ items: [item, ...this.state.items]}))
   }
   render() {
-    console.log(this.state.items)
     return (
       <div style={styles.container}>
         {this.state.items.map(item => <Item key={item.text} {...item} />)}

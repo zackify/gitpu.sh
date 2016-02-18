@@ -6,7 +6,11 @@ const Item = ({ text }) => (
     <h3 style={styles.heading}>GitLab</h3>
     <div style={styles.block}>
       <img src="/img/gitlab.png" style={styles.image} />
-      <span style={styles.text}>{text}</span>
+      <span style={styles.text}>
+      <pre>
+        {text}
+      </pre>
+      </span>
       <div style={styles.time}>7 hours ago</div>
     </div>
   </div>
