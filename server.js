@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/hook', (req, res) => {
-  io.emit('activity', {text: JSON.stringify(req.headers) })
+  //match for req.headers from db?
+  io.emit('activity', {text: JSON.stringify(req.body) })
   res.status(200).end()
 })
 
